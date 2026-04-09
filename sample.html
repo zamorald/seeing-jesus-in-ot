@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joseph: The First Type of Christ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" title="preferred" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" title="preferred" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+    <link rel="stylesheet" href="main.css">
+    <a href="#content">Skip to content</a>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+        </ul>
+    </nav>
+    <article id="content">
+        <header>
+            What this article is about.
+        </header>
+        <section>
+            <aside>
+                Just an aside.
+            </aside>
+            <figure>
+                <img src="eek.jpg">
+                <figcaption>a nonexistent image</figcaption>
+            </figure>
+        </section>
+        <footer>
+            What that article was about.
+            Refers to its container; so this footer is for the article, not the body.
+        </footer>
+    </article>
+    <p>
+        <em>simple emphasis</em>
+        <strong>strong importance</strong>
+        <br>
+        <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>
+
+        Headings are available 1-6.
+
+        The new <address></address> tag is not for addresses generally but specifically for contact info of this page or article (how to reach the author).
+
+        Use the new <dfn title="verbose definition">dfn</dfn> tag to highlight the first use of a term.
+
+        New editorial tags point out editorial insertions <ins></ins> and deletions <del></del>, with optional attributes datetime for when and cite for the rationale. Think "track changes."
+
+        Dates and times can now be captured. Written by Doctor Who on <time datetime="2052-11-21">Thursday 21st November 2052</time> where the datetime attribute is machine readable `CCYY-MM-DD HH:II` or sections thereof (e.g., CCYY-MM; HH:II).
+
+        The new <mark>mark</mark> tag highlights text; emphasis it is, but third-party, not original.
+    </p>
+    <p>
+        Use the tabindex attribute (takes integers) on links to allow logical tabbing through the page for better accessibility.
+        But really, the best thing is to wrap the anchor tag around a complete description of where it goes rather than a small selection.
+        If still necessary, add detail in the title attribute.
+    </p>
+    <p>
+        The new tag <q></q> is for shorter, in-line quotations (as opposed to blockquote).
+        HTMLDog seems to think the <cite></cite> tag (or is it an attribute in this case?) is for links to web resources only; they recommend other types be handled as figure with caption.
+        <figure>
+            <blockquote>[Big old quotation about evolution]</blockquote>
+            <figcaption>Charles Darwin</figcaption>
+        </figure>
+    </p>
+    <p>
+        It may be worth remembering the oft-forgotten description list.
+        <dl>
+            <dt>term with multiple definitions</dt>
+            <dd>definition 1</dd>
+            <dd>definition 2</dd>
+        </dl>
+        <dl>
+            <dt>mutliple terms (1 of 2) with a single definition</dt>
+            <dt>mutliple terms (2 of 2) with a single definition</dt>
+            <dd>definition</dd>
+        </dl>
+    </p>
+    <p>
+        Regarding images, HTMLDog notes:
+            The width and height attributes are necessary because if they are excluded, the browser will tend to calculate the size as the image loads, instead of when the page loads, which means that the layout of the document may jump around while the page is loading.
+        I note the alt tag should be considered required, as well.
+    </p>
+    <p>
+        On tables, note the usefulness of col for styling and how rowspans work in odd ways in this example from HTMLDog.
+        <table>
+            <caption>Remember `CSS caption-side: bottom`</caption>
+            <!-- figcaption might make more sense if the table is a figure -->
+            <colgroup>
+                <col>
+                <col class="alternative">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Column 1 heading</th>
+                    <th>Column 2 heading</th>
+                    <th>Column 3 heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 2, cell 1</td>
+                    <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
+                    <td>Row 3, cell 2</td>
+                    <td>Row 3, cell 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Row 4, cell 2</td>
+                    <td>Row 4, cell 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </p>
+</body>
+</html>
